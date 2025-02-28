@@ -74,7 +74,7 @@ for element, data in datasets.items():
     # Calcular o índice de confiabilidade (R²)
     r2_score = model.score(X, y)
     
-    # Plotar gráfico
+    # Plotar e exibir gráficos
     plt.figure()
     plt.scatter(X, y, color='blue', label='Dados reais')
     plt.plot(X, model.predict(X), color='red', label='Regressão Linear')
